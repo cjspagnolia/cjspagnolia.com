@@ -94,7 +94,7 @@ a,a:hover {
     opacity: 1; } }
 
 html {
-  background-color: #141414; }
+  background-color: #ffffff; }
 
 body {
   height: 100vh;
@@ -105,8 +105,8 @@ body {
   line-height: 60px;
   letter-spacing: -0.5px;
   color: #ffffff;
-  background-image: url("../../images/background.jpg");
-  background-position: center center;
+  background-image: url("../../images/background.jpeg");
+  background-position: 85% center;
   background-size: cover; }
   body p {
     margin-bottom: 28px;
@@ -152,14 +152,25 @@ body {
   -webkit-align-self: left;
           align-self: left;
   -webkit-animation: fadein 2s;
-          animation: fadein 2s; }
+          animation: fadein 2s; 
+  text-shadow: 0px 0px 18px rgba(0, 0, 0, 1);}
+  @media (max-width: 1170px) {
+    .name {
+      text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+      -webkit-animation: fadein 2s;
+      animation: fadein 2s;
+    }
+  }
+  @media (max-width: 800px) {
+    .name {
+      height: 50vh;} 
+  }
   @media (max-width: 500px) {
     .name {
       -webkit-align-self: center;
-              align-self: center; } }
-  .name img {
-    max-width: 165px;
-    height: auto; }
+              align-self: center; 
+      height: 50vh;} 
+  }
 
 .bio {
   -webkit-box-flex: 1;
@@ -181,9 +192,11 @@ body {
   max-width: 66%; }
   @media (max-width: 800px) {
     .bio {
-      max-width: none; } }
+      max-width: none;
+      vertical-align: bottom; 
+      } }
   .bio a {
-    color: #ffffff;
+    color: #000000;
     -webkit-transition: 1s;
     transition: 1s; }
     .bio a:hover {
@@ -249,8 +262,7 @@ body {
   .credit p.copyright {
     font-size: 13px;
     line-height: 14px;
-    font-weight: 500;
-    opacity: 0.4; }
+    font-weight: 500;}
     .credit p.copyright a {
       color: #ffffff;
 }

@@ -138,7 +138,7 @@ body {
       .fs-me .me-content {
         height: 90vh; } }
 
-.name {
+.name, .network {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -173,6 +173,7 @@ body {
   }
 
 .bio {
+  text-shadow: 0px 0px 18px rgba(0, 0, 0, 1);
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -205,6 +206,7 @@ body {
       transition: 0.1s; }
 
 .network {
+  text-shadow: 0px 0px 18px rgba(0, 0, 0, 1);
   padding: 0;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
@@ -254,6 +256,7 @@ body {
         transition: 0.1s; }
 
 .credit {
+  text-shadow: 0px 0px 18px rgba(0, 0, 0, 1);
   font-size: 12px;
   line-height: 14px;
   margin-bottom: 0;
@@ -282,4 +285,8 @@ body {
 
 path {
   fill: #ffffff;
+}
+
+.email, .icon-github, .icon-instagram, .icon-spotify {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 }

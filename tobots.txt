@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /totall_not_a_flag.txt
